@@ -1,6 +1,5 @@
-id,name,stock,price,category
-1,Arvind,1,7777,2
-2,dileep,2,86655,3
-3,sanjeev,2,8877666,5
-4,chandan,4,777777,6
-5,rajat,6,8878766,6
+Id,Name,category,cost_stock,cost_price,emision,rating
+1,BMW,2,17,7777777,500,A+
+2,Swift,1,18,9999999,6666,B+
+3,Tata Safari,4,20,7777777,777,C+
+4,Maruti,5,45,6666666,77788,D+
