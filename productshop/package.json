@@ -12,7 +12,8 @@
   "scripts": {
     "start": "cds-serve",
     "watch-productshop": "cds watch --open na.productshop/index.html?sap-ui-xx-viewCache=false --livereload false",
-    "watch-projectdemo": "cds watch --open projectdemo/index.html?sap-ui-xx-viewCache=false --livereload false"
+    "watch-projectdemo": "cds watch --open projectdemo/index.html?sap-ui-xx-viewCache=false --livereload false",
+    "watch-project": "cds watch --open na.project/index.html?sap-ui-xx-viewCache=false --livereload false"
   },
   "private": true,
   "workspaces": [
@@ -20,6 +21,7 @@
   ],
   "sapux": [
     "app/productshop",
-    "app/projectdemo"
+    "app/projectdemo",
+    "app/project"
   ]
 }

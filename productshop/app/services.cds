@@ -1,3 +1,3 @@
 
 
-using from './projectdemo/annotations';
+using from './project/annotations';

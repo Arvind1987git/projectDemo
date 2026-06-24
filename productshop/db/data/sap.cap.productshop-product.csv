@@ -1,5 +1,4 @@
-Id,Name,category,cost_stock,cost_price,emision,rating
-1,BMW,2,17,7777777,500,A+
-2,Swift,1,18,9999999,6666,B+
-3,Tata Safari,4,20,7777777,777,C+
-4,Maruti,5,45,6666666,77788,D+
+ID,name,category,stock,price,emisions,suplayer_ID,emision,rating
+49348f44-5232-467c-a249-fe55c988120f,BMW,1,100,200000020,1,2,12000,1
+c90100c0-af5f-4ff4-9c07-85daab61dd66,TATA,2,60,300000020,2,3,32000,2
+d3d083b0-f5b9-467a-a020-eed64e6ed016,Audi,3,40,300000078,3,4,20000,3

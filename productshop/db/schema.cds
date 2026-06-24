@@ -1,28 +1,47 @@
 namespace sap.cap.productshop;
 
-aspect carbanmission {
-    emision : Integer;
-    rating  : String;
+using
+{
+    cuid,
+    managed
+}
+from '@sap/cds/common';
 
+aspect carbanmission
+{
+    emision : Integer;
+    rating : Integer;
 }
 
-type pricecast  {
+type pricecast
+{
     stock : Integer;
     price : Integer;
 }
 
-entity product: carbanmission {
-    key id       : Integer;
-        name     : String;
-        category : Integer;
-        cost     : pricecast;
+entity product : cuid, managed, carbanmission
+{
+    name : String;
+    category : Integer;
+    stock : Integer;
+    price : Integer;
+    emisions:Integer;
+    suplayer : Association to one suplayer;
+    conversestion: Composition of many{
 
-
+        key ID : UUID;
+        timestemp : String;
+        prosesser : String;
+        massege : String;
+    }
 }
 
-entity suplayer {
-    key ID          : Integer;
-        name        : String;
-        branch_name : String;
-        city        : String;
+entity suplayer
+{
+    key ID : Integer;
+    name : String;
+    phone : String;
+    city : String;
+    product : Association to many product
+                 on product.suplayer = $self;
 }
