@@ -75,15 +75,15 @@ annotate service.product with @(
             Value : price,
         },
         {
-            $Type : 'UI.DataFieldForAction',
-            Action : 'productshop.orderProduct',
-            Label : 'Order Product',
-            Inline : true,
-        },
-        {
             $Type : 'UI.DataFieldForAnnotation',
             Target : '@UI.DataPoint#emisions',
             Label : '5 star',
+        },
+        {
+            $Type : 'UI.DataFieldForAction',
+            Action : 'productshop.orderProduct',
+            Label : '{i18n>OrderProduct}',
+            Inline : true,
         },
     ],
     UI.SelectionFields : [

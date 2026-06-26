@@ -1,10 +1,17 @@
-using { sap.cap.productshop as my} from '../db/schema';
+
+using { sap.cap.productshop as my } from '../db/schema';
+
+
+
 //@protocol: 'rest'
 
 
-service productshop{
+service productshop
+{
+
+
 entity product as projection on my.product actions {
-    action orderProduct (name: String @title : 'Product name',stock: Integer @title : 'stock');
+    action orderProduct (stock: Integer);
     action fingerprint (username: String );
     action createOne (name: String );
 };
@@ -13,3 +20,5 @@ function  myfunction (name: String ) returns String;
 action  myAction (name: String ) returns String;
 
 }
+//annotate productshop  with @(requires: 'productmanager');
+   

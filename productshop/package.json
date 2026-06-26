@@ -2,6 +2,7 @@
   "name": "productshop",
   "version": "1.0.0",
   "dependencies": {
+    "@cap-js/hana": "^2",
     "@sap/cds": "^9",
     "better-sqlite3": "^12.11.1"
   },
@@ -23,5 +24,16 @@
     "app/productshop",
     "app/projectdemo",
     "app/project"
-  ]
+  ],
+  "cds": {
+    "requires": {
+      "db": {
+        "kind": "sqlite",
+        "credential": {
+          "db": "db.sqlite"
+
+        }
+      }
+    }
+  }
 }

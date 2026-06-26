@@ -1,0 +1,32 @@
+//Product
+GET  http://localhost:4004/odata/v4/productshop/product
+
+//
+//GET  http://localhost:4004/odata/v4/productshop/product?$expand=conversestion
+
+//GET  http://localhost:4004/odata/v4/productshop/product?$expand=suplayer
+
+//GET  http://localhost:4004/odata/v4/productshop/suplayer?$expand=product
+
+//GET  http://localhost:4004/odata/v4/productshop/myfunction?name='Ertiga';
+# POST http://localhost:4004/odata/v4/productshop/myAction
+# Content-Type: application/json
+
+# {
+#   "name": "Ertiga"
+# }
+
+//Post Method
+
+# POST http://localhost:4004/odata/v4/productshop/product
+# Content-Type: application/json
+
+# {
+  
+#   "name": "Ertiga",
+#   "category": 6,
+#   "cost_stock": 18,
+#   "cost_price": 9999999,
+#   "emision": 6666,
+#   "rating": "B+"
+# }
